@@ -28,7 +28,10 @@ const { title } = Astro.props;
 			<slot />
 		</main>
 		<script type="module" hoist src="/src/assets/js/main.js"></script>
-		<script type="module" hoist src="/src/assets/js/flickity.pkgd.min.js"
+		<script
+			type="module"
+			hoist
+			src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
 		></script>
 	</body>
 </html>
