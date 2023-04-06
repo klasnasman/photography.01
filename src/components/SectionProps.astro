@@ -1,0 +1,26 @@
+---
+export interface Props {
+    title: string;
+    content: string;
+}
+
+const { title, content } = Astro.props;
+---
+
+<div class="carousel__info">
+    <p>{title}</p>
+    <button class="carousel__toggle btn">Info</button>
+    <div class="carousel__dropdown">
+        <p>
+            {content}
+        </p>
+    </div>
+    <div class="carousel__nav">
+        <p class="carousel__status"></p>
+        <div class="carousel__buttons">
+            <button class="button__prev">Prev</button><button
+                class="button__next">Next</button
+            >
+        </div>
+    </div>
+</div>

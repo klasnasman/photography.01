@@ -1,0 +1,33 @@
+---
+import "../styles/import.css";
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="theme-color" content="#f1f1f0" />
+		<script src="/src/assets/js/main.js"></script>
+		<script src="/src/assets/js/flickity.pkgd.min.js"></script>
+	</head>
+	<body>
+		<main class="main">
+			<slot />
+		</main>
+	</body>
+</html>

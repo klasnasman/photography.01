@@ -1,0 +1,62 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+:root {
+    /* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    /* Step -1: 12.80px → 16.00px */
+    /* --step--1: clamp(0.80rem, calc(0.73rem + 0.35vw), 1.00rem); */
+    --step--1: clamp(0.75rem, 0.525rem + 0.4vw, 0.875rem);
+    /* Step 0: 16.00px → 20.00px */
+    --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem);
+    /* Step 1: 20.00px → 25.00px */
+    --step-1: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
+    /* Step 2: 25.00px → 31.25px */
+    --step-2: clamp(1.56rem, calc(1.43rem + 0.68vw), 1.95rem);
+    /* Step 3: 31.25px → 39.06px */
+    --step-3: clamp(1.95rem, calc(1.78rem + 0.85vw), 2.44rem);
+    /* Step 4: 39.06px → 48.83px */
+    --step-4: clamp(2.44rem, calc(2.23rem + 1.06vw), 3.05rem);
+
+    --ff-body: 'Bergen Mono', 'Verdana', serif;
+    --ff-heading: 'Bergen Mono', 'Times', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+    --spacer-xs: 0.25rem;
+    --spacer-s: 0.5rem;
+    --spacer-m: 1rem;
+    --spacer-l: 2rem;
+
+    --focus-color: rgb(255, 237, 115);
+
+    --clr-bg: #f1f1f0;
+    --clr-text: #212529;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --spacer-l: 1rem;
+    }
+}
+
+html[data-theme="light"] {
+    --clr-bg: #f1f1f0;
+    --clr-text: #212529;
+}
+
+html[data-theme="dark"] {
+    --clr-bg: #212529;
+    --clr-text: #f1f1f0;
+}
