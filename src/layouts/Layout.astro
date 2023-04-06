@@ -22,8 +22,6 @@ const { title } = Astro.props;
 		<meta property="og:image" content="" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="theme-color" content="#f1f1f0" />
-		<script src="/src/assets/js/main.js"></script>
-		<script src="/src/assets/js/flickity.pkgd.min.js"></script>
 	</head>
 	<body>
 		<main class="main">
@@ -31,3 +29,5 @@ const { title } = Astro.props;
 		</main>
 	</body>
 </html>
+<script type="module" hoist src="/src/assets/js/main.js"></script>
+<script type="module" hoist src="/src/assets/js/flickity.pkgd.min.js"></script>
