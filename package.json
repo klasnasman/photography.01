@@ -23,5 +23,8 @@
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",
     "unipointer": "^2.4.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
   }
 }
