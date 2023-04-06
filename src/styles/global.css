@@ -22,7 +22,6 @@ main {
 
 main>* {
     flex-grow: 1;
-    flex-basis: 50%;
 }
 
 main .section {
@@ -49,7 +48,7 @@ main .section {
 .menu__ul {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
+    flex: 1 1 auto;
     padding-bottom: var(--spacer-m);
     overflow-x: hidden;
     overflow-y: auto;
