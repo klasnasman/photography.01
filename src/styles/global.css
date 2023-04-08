@@ -155,6 +155,7 @@ header {
 /* carousel */
 .swiper__pagination {
 color: var(--clr-text);
+background-color: var(--clr-text):
 }
 
 .project__container {
