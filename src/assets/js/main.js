@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper-container', {
         invert: false,
     },
     pagination: {
-        el: '.swiper__pagination',
+        el: '.swiper-pagination',
         type: 'fraction',
         clickable: true,
         dynamicBullets: false
