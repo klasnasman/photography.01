@@ -1,37 +1,40 @@
 ---
-import CarouselProps from "../../components/CarouselProps.astro";
-import MenuContent from "../../components/MenuContent.astro";
-import SectionProps from "../../components/SectionProps.astro";
-import Transitions from "../../components/Transitions";
-import Layout from "../../layouts/Layout.astro";
+import SwiperProps from "../components/SwiperProps.astro";
+import MenuContent from "../components/MenuContent.astro";
+import ProjectProps from "../components/ProjectProps.astro";
+import Transitions from "../components/Transitions";
+import Layout from "../layouts/Layout.astro";
 ---
 
+<!-- TODO:
+    Byta till swiper
+    :focus drowdown fungerar inte på mobil
+    50/50 split mobil bild/menu
+    Justera box-shadow top mobil
+ -->
 <Layout title="Klas Näsman / Project">
     <nav class="menu">
         <MenuContent />
     </nav>
     <section class="section">
         <Transitions client:load>
-            <div class="carousel__container">
-                <SectionProps
-                    title="Hestra"
-                    content="Anna och Mathias gifte sig den 9 augusti 2018. Bröllopet ägde rum på vackra Muskö i Stockholms skärgård"
-                />
-                <div class="carousel__content">
-                    <CarouselProps
+            <ProjectProps
+                title="Hestra"
+                content="Anna och Mathias gifte sig den 9 augusti 2018. Bröllopet ägde rum på vackra Muskö i Stockholms skärgård"
+            />
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <SwiperProps
                         src="/src/assets/img/gudmar.1280.jpg"
                         alt="Gudmar in Riksgränsen"
-                        srcset=""
                     />
-                    <CarouselProps
+                    <SwiperProps
                         src="/src/assets/img/gudmar2.1280.jpg"
-                        alt="Gudmar in Riksgränsen portrait"
-                        srcset=""
+                        alt="Gudmar in Riksgränsen"
                     />
-                    <CarouselProps
-                        src="/src/assets/img/toro.1280.jpg"
-                        alt="Torö Stenstrand"
-                        srcset=""
+                    <SwiperProps
+                        src="/src/assets/img/gudmar.1280.jpg"
+                        alt="Gudmar in Riksgränsen"
                     />
                 </div>
             </div>
