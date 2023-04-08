@@ -152,6 +152,10 @@ header {
 }
 
 /* carousel */
+.swiper__pagination {
+color: var(--clr-text);
+}
+
 .project__container {
     position: relative;
 }
