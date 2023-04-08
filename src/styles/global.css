@@ -153,7 +153,7 @@ header {
 }
 
 /* carousel */
-.swiper__pagination {
+.swiper-pagination {
 color: var(--clr-text);
 background-color: var(--clr-text):
 }
