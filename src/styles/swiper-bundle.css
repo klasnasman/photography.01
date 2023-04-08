@@ -402,11 +402,3 @@
     outline: none;
     position: relative;
 }
-
-@media screen and (max-width: 520px) {
-
-    .swiper-button-next:hover:before,
-    .swiper-button-prev:hover:before {
-        display: none;
-    }
-}
