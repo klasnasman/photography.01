@@ -1,0 +1,25 @@
+---
+export interface Props {
+    title: string;
+    content: string;
+}
+
+const { title, content } = Astro.props;
+---
+
+<div class="project__info">
+    <p>{title}</p>
+    <button class="project__toggle btn">Info</button>
+    <div class="project__dropdown">
+        <p>
+            {content}
+        </p>
+    </div>
+    <div class="project__nav">
+        <div class="swiper__pagination"></div>
+        <div class="swiper__buttons">
+            <button class="swiper-button-prev">Prev</button>
+            <button class="swiper-button-next">Next</button>
+        </div>
+    </div>
+</div>

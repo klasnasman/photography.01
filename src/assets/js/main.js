@@ -1,27 +1,24 @@
-const flkty = new Flickity('.carousel__content', {
-    // options
-    wrapAround: true,
-    prevNextButtons: false,
-    pageDots: false,
-    contain: true,
-    cellAlign: "left"
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    },
+    loop: true,
+    speed: 300,
+    mousewheel: {
+        invert: false,
+    },
+    pagination: {
+        el: '.swiper__pagination',
+        type: 'fraction',
+        clickable: true,
+        dynamicBullets: false
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
 });
-
-const carouselStatus = document.querySelector('.carousel__status');
-const nextButton = document.querySelector('.button__next');
-const previousButton = document.querySelector('.button__prev');
-
-previousButton.addEventListener('click', function () {
-    flkty.previous();
-});
-
-nextButton.addEventListener('click', function () {
-    flkty.next();
-});
-
-function updateStatus() {
-    const slideNumber = flkty.selectedIndex + 1;
-    carouselStatus.textContent = slideNumber + '/' + flkty.slides.length;
-}
-updateStatus();
-flkty.on('select', updateStatus);
