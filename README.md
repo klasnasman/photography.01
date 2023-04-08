@@ -1,2 +1,2 @@
-Site for photographers, made with Astro.
+Site for photographers, built with Astro.
 klasnasman-astro.netlify.com
