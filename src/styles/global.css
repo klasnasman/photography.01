@@ -220,6 +220,7 @@ header {
 
 .project__buttons {
     display: flex;
+color: var(--clr-text):
     column-gap: var(--spacer-s);
 }
 
