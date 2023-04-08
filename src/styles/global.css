@@ -122,7 +122,7 @@ header {
     padding-top: var(--spacer-s);
 }
 
-.carousel__toggle {
+.project__toggle {
     display: inline-block;
     border: none;
     outline: none !important;
@@ -132,7 +132,7 @@ header {
     z-index: 10;
 }
 
-.carousel__toggle:after {
+.project__toggle:after {
     display: block;
     content: "";
     height: 1px;
@@ -141,22 +141,22 @@ header {
     transition: width 0.3s ease-in-out;
 }
 
-.carousel__toggle:hover:after,
-.carousel__toggle:focus:after {
+.project__toggle:hover:after,
+.project__toggle:focus:after {
     width: 0%;
 }
 
-.carousel__toggle:focus+.carousel__dropdown {
+.project__toggle:focus+.project__dropdown {
     opacity: 1;
     visibility: visible;
 }
 
 /* carousel */
-.carousel__container {
+.project__container {
     position: relative;
 }
 
-.carousel__info {
+.project__info {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -169,11 +169,11 @@ header {
     left: 0;
 }
 
-.carousel__info p {
+.project__info p {
     z-index: 10;
 }
 
-.carousel__nav {
+.project__nav {
     position: absolute;
     z-index: 1;
     padding: 2rem 2rem;
@@ -183,17 +183,17 @@ header {
 }
 
 @media (max-width: 800px) {
-    .carousel__info {
+    .project__info {
         padding: 1rem;
         top: 0rem;
     }
 
-    .carousel__nav {
+    .project__nav {
         padding: 1rem;
     }
 }
 
-.carousel__dropdown {
+.project__dropdown {
     position: absolute;
     top: 0;
     height: 100dvh;
@@ -208,46 +208,40 @@ header {
     z-index: 8;
 }
 
-.carousel__dropdown p {
+.project__dropdown p {
     padding: 6.2rem 2rem;
 }
 
 @media (max-width: 800px) {
-    .carousel__dropdown p {
+    .project__dropdown p {
         padding: 4rem 1rem;
     }
 }
 
-.carousel__buttons {
+.project__buttons {
     display: flex;
     column-gap: var(--spacer-s);
 }
 
 @media (max-width: 800px) {
-    .carousel__buttons {
+    .project__buttons {
         display: none;
     }
 }
 
-.carousel__content {
+.project__content {
     display: grid;
     min-height: calc(100vh - 0rem);
     align-items: center;
 }
 
 @media (max-width: 800px) {
-    .carousel__content {
+    .project__content {
         min-height: 40svh;
     }
 }
 
-.carousel__cell {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.carousel__img {
+.project__img {
     min-width: inherit;
     min-height: inherit;
     max-height: auto;
@@ -256,7 +250,7 @@ header {
 }
 
 @media (max-width: 800px) {
-    .carousel__img {
+    .project__img {
         max-height: 40svh;
     }
 }
