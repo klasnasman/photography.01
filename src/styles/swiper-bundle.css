@@ -402,3 +402,7 @@
     outline: none;
     position: relative;
 }
+
+.swiper__pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+    color: var(--clr-text);
+}
