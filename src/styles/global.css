@@ -6,6 +6,7 @@ html {
 body {
     font-family: var(--ff-body);
     font-size: var(--step--1);
+color: var(--clr-text);
     background-color: var(--clr-bg);
 }
 
