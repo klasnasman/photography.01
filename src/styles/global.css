@@ -6,7 +6,7 @@ html {
 body {
     font-family: var(--ff-body);
     font-size: var(--step--1);
-color: var(--clr-text);
+    color: var(--clr-text);
     background-color: var(--clr-bg);
 }
 
@@ -154,8 +154,8 @@ header {
 
 /* carousel */
 .swiper-pagination {
-color: var(--clr-text);
-background-color: var(--clr-text):
+    color: var(--clr-text);
+    background-color: var(--clr-text);
 }
 
 .project__container {
@@ -226,7 +226,7 @@ background-color: var(--clr-text):
 
 .project__buttons {
     display: flex;
-color: var(--clr-text):
+    color: var(--clr-text);
     column-gap: var(--spacer-s);
 }
 
