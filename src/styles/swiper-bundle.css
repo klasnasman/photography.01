@@ -349,6 +349,12 @@
     cursor: grab;
 }
 
+@media (max-width: 800px) {
+    .slider-item {
+        justify-content: flex-start;
+    }
+}
+
 .slider-item-content {
     padding: 32px;
     display: flex;
@@ -409,4 +415,8 @@
     .swiper-button-prev:hover:before {
         display: none;
     }
+}
+
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+    color: var(--clr-text);
 }
