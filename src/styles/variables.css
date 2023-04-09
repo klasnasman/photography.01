@@ -52,10 +52,10 @@
 
 html[data-theme="light"] {
     --clr-bg: #f1f1f0;
-    --clr-text: #212529;
+    --clr-text: #0c0c0c;
 }
 
 html[data-theme="dark"] {
-    --clr-bg: #212529;
+    --clr-text: #0c0c0c;
     --clr-text: #f1f1f0;
 }
