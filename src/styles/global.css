@@ -89,16 +89,19 @@ header {
     padding-bottom: var(--spacer-m);
 }
 
-.header__toggle {
+.header__toggle,
+.project__toggle {
     display: inline-block;
     border: none;
     outline: none !important;
     background-color: inherit;
     text-decoration: none;
     color: var(--clr-text);
+    z-index: 10;
 }
 
-.header__toggle:after {
+.header__toggle:after,
+.project__toggle:after {
     display: block;
     content: "";
     height: 1px;
@@ -108,11 +111,12 @@ header {
 }
 
 .header__toggle:hover:after,
-.header__toggle:focus:after {
+.project__toggle:hover:after {
     width: 0%;
 }
 
-.header__toggle:hover+.header__dropdown {
+.header__toggle:hover+.header__dropdown,
+.project__toggle:hover+.project__dropdown {
     opacity: 1;
     visibility: visible;
 }
@@ -134,39 +138,6 @@ header {
     padding-top: var(--spacer-s);
 }
 
-.project__toggle {
-    display: inline-block;
-    border: none;
-    outline: none !important;
-    background-color: inherit;
-    text-decoration: none;
-    color: var(--clr-text);
-    z-index: 10;
-}
-
-.project__toggle:after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 100%;
-    background-color: var(--clr-text);
-    transition: width 0.3s ease-in-out;
-}
-
-.project__toggle:hover:after,
-.project__toggle:focus:after {
-    width: 0%;
-}
-
-.project__toggle:hover+.project__dropdown {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* carousel */
-.swiper__container {
-    position: relative;
-}
 
 .project__info {
     position: absolute;
@@ -185,7 +156,7 @@ header {
     z-index: 10;
 }
 
-.project__nav {
+.project__pagination {
     position: absolute;
     z-index: 1;
     padding: 2rem 2rem;
@@ -200,7 +171,7 @@ header {
         top: 0rem;
     }
 
-    .project__nav {
+    .project__pagination {
         padding: 1rem;
     }
 }
@@ -239,18 +210,6 @@ a {
 
 p {
     color: var(--clr-text);
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
-}
-
-h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .link a:after {
