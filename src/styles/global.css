@@ -130,7 +130,7 @@ header {
     visibility: hidden;
     opacity: 0;
     background-color: var(--clr-bg);
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .header__dropdown p {
@@ -185,7 +185,7 @@ header {
     visibility: hidden;
     opacity: 0;
     background-color: var(--clr-bg);
-    transition: all 0.3s;
+    transition: all 0.4s;
     z-index: 8;
 }
 
