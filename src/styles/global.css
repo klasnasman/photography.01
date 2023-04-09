@@ -215,8 +215,7 @@ p {
     color: var(--clr-text);
 }
 
-.link a:after,
-.link a:before {
+.link a:after {
     display: block;
     content: "";
     height: 1px;
@@ -225,8 +224,7 @@ p {
     transition: width 0.3s ease-in-out;
 }
 
-.link a:hover:after,
-.link a:hover:before {
+.link a:hover:after {
     width: 100%;
 }
 
