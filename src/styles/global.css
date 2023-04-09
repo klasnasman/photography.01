@@ -84,7 +84,7 @@ main .project {
     margin-bottom: var(--spacer-s);
 }
 
-/* header and carousel toggle */
+/* header and button toggles */
 header {
     position: relative;
     padding-bottom: var(--spacer-m);
@@ -140,7 +140,7 @@ header {
     text-wrap: balance;
 }
 
-
+/* project nav and dropdown */
 .project__info {
     position: absolute;
     display: flex;
@@ -202,7 +202,6 @@ header {
         padding: 1rem;
     }
 }
-
 
 /* typography */
 a {
