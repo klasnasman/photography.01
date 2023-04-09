@@ -244,7 +244,7 @@ p {
     height: 0px;
     width: 100%;
     z-index: 3;
-    box-shadow: 0 0 5px 8px var(--clr-bg);
+    box-shadow: 0 0 5px 6px var(--clr-bg);
 }
 
 .mask-bottom {
