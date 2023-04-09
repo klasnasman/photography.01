@@ -275,6 +275,7 @@
     flex-direction: column;
     flex-shrink: 0;
     opacity: 0;
+    background: linear-gradient(270deg, #f1f1f0 0%, #f1f1f0 100%);
     cursor: -webkit-grab;
     cursor: grab;
 }
@@ -309,7 +310,7 @@
     max-height: auto;
     max-height: 500px;
     object-fit: contain;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 @media (max-width: 800px) {
