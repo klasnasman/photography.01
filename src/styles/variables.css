@@ -41,7 +41,7 @@
     --focus-color: rgb(255, 237, 115);
 
     --clr-bg: #f1f1f0;
-    --clr-text: #212529;
+    --clr-text: #0c0c0c;
 }
 
 @media (max-width: 800px) {
