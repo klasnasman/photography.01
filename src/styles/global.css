@@ -204,7 +204,7 @@ header {
 }
 
 
-/* typography and link hover */
+/* typography */
 a {
     display: inline-block;
     color: var(--clr-text);
@@ -215,6 +215,7 @@ p {
     color: var(--clr-text);
 }
 
+/* link hover animation */
 .link a:after {
     display: block;
     content: "";
@@ -228,7 +229,7 @@ p {
     width: 100%;
 }
 
-/* mask overflow */
+/* menu ul box shadow */
 .mask-top {
     content: "";
     top: -3px;
