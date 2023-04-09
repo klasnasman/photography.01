@@ -135,6 +135,7 @@ header {
 
 .header__dropdown p {
     padding-top: var(--spacer-s);
+    text-wrap: balance;
 }
 
 
@@ -153,6 +154,7 @@ header {
 
 .project__info p {
     z-index: 10;
+    text-wrap: balance;
 }
 
 .project__pagination {

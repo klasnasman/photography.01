@@ -11,9 +11,7 @@ const { title, content } = Astro.props;
     <p>{title}</p>
     <button class="project__toggle btn">Info</button>
     <div class="project__dropdown">
-        <p>
-            {content}
-        </p>
+        <p set:html={content} />
     </div>
     <div class="project__pagination">
         <div class="swiper-pagination"></div>
