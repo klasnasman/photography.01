@@ -33,6 +33,12 @@ main .section {
     justify-content: center;
 }
 
+@media (max-width: 800px) {
+    main .section {
+        justify-content: flex-start;
+    }
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -220,31 +226,6 @@ header {
 @media (max-width: 800px) {
     .project__dropdown p {
         padding: 4rem 1rem;
-    }
-}
-
-.carousel__buttons {
-    display: flex;
-    column-gap: var(--spacer-s);
-}
-
-@media (max-width: 800px) {
-    .carousel__buttons {
-        display: none;
-    }
-}
-
-.carousel__img {
-    min-width: inherit;
-    min-height: inherit;
-    max-height: auto;
-    max-height: 500px;
-    object-fit: contain;
-}
-
-@media (max-width: 800px) {
-    .carousel__img {
-        max-height: 40svh;
     }
 }
 
