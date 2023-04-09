@@ -9,7 +9,7 @@ body {
     background-color: var(--clr-bg);
 }
 
-/* main, projects and menu sections */
+/* main, project and menu sections */
 main {
     display: flex;
     min-height: 100dvh;
