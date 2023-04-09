@@ -6,7 +6,6 @@ html {
 body {
     font-family: var(--ff-body);
     font-size: var(--step--1);
-    color: var(--clr-text);
     background-color: var(--clr-bg);
 }
 
@@ -28,13 +27,10 @@ main>* {
 
 main .section {
     position: relative;
-    border-right: 1px solid var(--clr-text);
-}
-
-@media (max-width: 800px) {
-    main .section {
-        border-right: 0px;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu {
@@ -45,12 +41,20 @@ main .section {
     height: 100dvh;
     height: 100svh;
     padding: var(--spacer-l);
+    border-left: 1px solid;
+    z-index: 1;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        border-left: 0px;
+    }
 }
 
 .menu__ul {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 auto;
+    flex: 1;
     padding-bottom: var(--spacer-m);
     overflow-x: hidden;
     overflow-y: auto;
@@ -153,12 +157,7 @@ header {
 }
 
 /* carousel */
-.swiper-pagination {
-    color: var(--clr-text);
-    background-color: var(--clr-text);
-}
-
-.project__container {
+.carousel__container {
     position: relative;
 }
 
@@ -224,31 +223,18 @@ header {
     }
 }
 
-.project__buttons {
+.carousel__buttons {
     display: flex;
-    color: var(--clr-text);
     column-gap: var(--spacer-s);
 }
 
 @media (max-width: 800px) {
-    .project__buttons {
+    .carousel__buttons {
         display: none;
     }
 }
 
-.project__content {
-    display: grid;
-    min-height: calc(100vh - 0rem);
-    align-items: center;
-}
-
-@media (max-width: 800px) {
-    .project__content {
-        min-height: 40svh;
-    }
-}
-
-.project__img {
+.carousel__img {
     min-width: inherit;
     min-height: inherit;
     max-height: auto;
@@ -257,7 +243,7 @@ header {
 }
 
 @media (max-width: 800px) {
-    .project__img {
+    .carousel__img {
         max-height: 40svh;
     }
 }
@@ -314,12 +300,8 @@ h2 {
 /* mask overflow */
 .mask-top {
     content: "";
-    top: -1px;
+    top: -2px;
     position: sticky;
-    transform: translateY(-1px);
-    -webkit-transform: translateY(-1px);
-    -moz-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
     height: 0px;
     width: 100%;
     z-index: 3;
@@ -330,10 +312,6 @@ h2 {
     content: "";
     bottom: -14px;
     position: sticky;
-    transform: translateY(-1px);
-    -webkit-transform: translateY(-1px);
-    -moz-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
     height: 0px;
     width: 100%;
     z-index: 3;

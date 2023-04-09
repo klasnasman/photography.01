@@ -403,6 +403,10 @@
     position: relative;
 }
 
-.swiper__pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
-    color: var(--clr-text);
+@media screen and (max-width: 520px) {
+
+    .swiper-button-next:hover:before,
+    .swiper-button-prev:hover:before {
+        display: none;
+    }
 }
