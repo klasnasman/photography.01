@@ -9,6 +9,7 @@ body {
     background-color: var(--clr-bg);
 }
 
+/* main, projects and menu sections */
 main {
     display: flex;
     min-height: 100dvh;
@@ -25,7 +26,7 @@ main>* {
     flex-basis: 50%;
 }
 
-main .section {
+main .projects {
     position: relative;
     display: flex;
     align-items: center;
@@ -34,7 +35,7 @@ main .section {
 }
 
 @media (max-width: 800px) {
-    main .section {
+    main .projects {
         justify-content: flex-start;
         max-height: 40svh;
     }
