@@ -163,7 +163,7 @@ header {
 }
 
 /* carousel */
-.carousel__container {
+.swiper__container {
     position: relative;
 }
 

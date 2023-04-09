@@ -315,6 +315,7 @@
 @media (max-width: 800px) {
     .swiper-wrapper {
         align-items: flex-start;
+        max-height: 40svh;
     }
 }
 
@@ -384,7 +385,7 @@
 
 @media (max-width: 800px) {
     .slider-image {
-        max-height: 45vh;
+        max-height: 40vh;
     }
 }
 
