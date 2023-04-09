@@ -36,6 +36,7 @@ main .section {
 @media (max-width: 800px) {
     main .section {
         justify-content: flex-start;
+        max-height: 40svh;
     }
 }
 
@@ -70,7 +71,7 @@ main .section {
 @media (max-width: 800px) {
     .menu__ul {
         overflow-y: scroll;
-        max-height: 45svh;
+        max-height: 50svh;
     }
 }
 

@@ -385,7 +385,7 @@
 
 @media (max-width: 800px) {
     .slider-image {
-        max-height: 40vh;
+        max-height: 40svh;
     }
 }
 
