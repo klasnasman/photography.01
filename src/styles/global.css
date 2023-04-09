@@ -135,6 +135,7 @@ header {
 
 .header__dropdown p {
     padding-top: var(--spacer-s);
+    padding-right: var(--spacer-xs);
     text-wrap: balance;
 }
 
