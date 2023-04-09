@@ -239,7 +239,7 @@ p {
 /* mask overflow */
 .mask-top {
     content: "";
-    top: -2px;
+    top: -3px;
     position: sticky;
     height: 0px;
     width: 100%;
