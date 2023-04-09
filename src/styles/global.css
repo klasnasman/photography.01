@@ -26,7 +26,7 @@ main>* {
     flex-basis: 50%;
 }
 
-main .projects {
+main .project {
     position: relative;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ main .projects {
 }
 
 @media (max-width: 800px) {
-    main .projects {
+    main .project {
         justify-content: flex-start;
         max-height: 40svh;
     }
@@ -136,7 +136,7 @@ header {
 
 .header__dropdown p {
     padding-top: var(--spacer-s);
-    padding-right: var(--spacer-s);
+    padding-right: var(--spacer-m);
     text-wrap: balance;
 }
 
