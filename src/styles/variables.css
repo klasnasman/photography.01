@@ -27,8 +27,7 @@
     /* Step 4: 39.06px → 48.83px */
     --step-4: clamp(2.44rem, calc(2.23rem + 1.06vw), 3.05rem);
 
-    --ff-body: 'Bergen Mono', 'Verdana', serif;
-    --ff-heading: 'Bergen Mono', 'Times', sans-serif;
+    --ff-body: 'Domaine Sans Text', 'Bergen Mono', 'Verdana', serif;
 
     --fw-light: 300;
     --fw-regular: 400;
