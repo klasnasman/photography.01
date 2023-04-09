@@ -189,7 +189,6 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    opacity: 0.5;
     transition: 0.3s;
 }
 
