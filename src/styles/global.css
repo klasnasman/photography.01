@@ -135,7 +135,7 @@ header {
 
 .header__dropdown p {
     padding-top: var(--spacer-s);
-    padding-right: var(--spacer-xs);
+    padding-right: var(--spacer-s);
     text-wrap: balance;
 }
 
@@ -156,26 +156,6 @@ header {
 .project__info p {
     z-index: 10;
     text-wrap: balance;
-}
-
-.project__pagination {
-    position: absolute;
-    z-index: 1;
-    padding: 2rem 2rem;
-    text-align: right;
-    top: 0;
-    right: 0;
-}
-
-@media (max-width: 800px) {
-    .project__info {
-        padding: 1rem;
-        top: 0rem;
-    }
-
-    .project__pagination {
-        padding: 1rem;
-    }
 }
 
 .project__dropdown {
@@ -202,6 +182,27 @@ header {
     }
 }
 
+.project__pagination {
+    position: absolute;
+    z-index: 1;
+    padding: 2rem 2rem;
+    text-align: right;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    .project__info {
+        padding: 1rem;
+        top: 0rem;
+    }
+
+    .project__pagination {
+        padding: 1rem;
+    }
+}
+
+
 /* typography and link hover */
 a {
     display: inline-block;
@@ -213,19 +214,7 @@ p {
     color: var(--clr-text);
 }
 
-.link a:after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 0%;
-    background-color: var(--clr-text);
-    transition: width 0.3s ease-in-out;
-}
-
-.link a:hover:after {
-    width: 100%;
-}
-
+.link a:after,
 .link a:before {
     display: block;
     content: "";
@@ -235,6 +224,7 @@ p {
     transition: width 0.3s ease-in-out;
 }
 
+.link a:hover:after,
 .link a:hover:before {
     width: 100%;
 }
