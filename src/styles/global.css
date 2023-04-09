@@ -112,7 +112,7 @@ header {
     width: 0%;
 }
 
-.header__toggle:focus+.header__dropdown {
+.header__toggle:hover+.header__dropdown {
     opacity: 1;
     visibility: visible;
 }
@@ -158,7 +158,7 @@ header {
     width: 0%;
 }
 
-.project__toggle:focus+.project__dropdown {
+.project__toggle:hover+.project__dropdown {
     opacity: 1;
     visibility: visible;
 }
