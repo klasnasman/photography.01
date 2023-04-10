@@ -229,7 +229,7 @@ p {
 }
 
 /* menu ul box shadow */
-.mask-top {
+.box-top {
     content: "";
     top: -3px;
     position: sticky;
@@ -239,7 +239,7 @@ p {
     box-shadow: 0 0 5px 6px var(--clr-bg);
 }
 
-.mask-bottom {
+.box-bottom {
     content: "";
     bottom: -14px;
     position: sticky;
