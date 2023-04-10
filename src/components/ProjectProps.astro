@@ -9,7 +9,7 @@ const { title, content } = Astro.props;
 
 <div class="project__info">
     <p>{title}</p>
-    <button class="project__toggle btn">Info</button>
+    <button class="project__toggle">Info</button>
     <div class="project__dropdown">
         <p set:html={content} />
     </div>
