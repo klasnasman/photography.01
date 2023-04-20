@@ -1,11 +1,11 @@
 ---
 export interface Props {
     title: string;
-    content: string;
+    info: string;
     href: string;
 }
 
-const { href, title, content } = Astro.props;
+const { href, title, info } = Astro.props;
 ---
 
 <li class="menu__li link">
@@ -14,7 +14,7 @@ const { href, title, content } = Astro.props;
             {title}
         </p>
         <em>
-            {content}
+            {info}
         </em>
     </a>
 </li>

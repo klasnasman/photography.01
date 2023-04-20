@@ -1,17 +1,17 @@
 ---
 export interface Props {
     title: string;
-    content: string;
+    info: string;
 }
 
-const { title, content } = Astro.props;
+const { title, info } = Astro.props;
 ---
 
 <div class="project__info">
     <p>{title}</p>
     <button class="project__toggle">Info</button>
     <div class="project__dropdown">
-        <p set:html={content} />
+        <p set:html={info} />
     </div>
     <div class="project__pagination">
         <div class="swiper-pagination"></div>
