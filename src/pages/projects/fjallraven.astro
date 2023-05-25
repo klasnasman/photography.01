@@ -1,37 +1,34 @@
 ---
-import SwiperProps from "../../components/SwiperProps.astro";
 import MenuContent from "../../components/MenuContent.astro";
 import ProjectProps from "../../components/ProjectProps.astro";
 import Transitions from "../../components/Transitions";
 import Layout from "../../layouts/Layout.astro";
+const photos = await Astro.glob("/public/assets/*");
 ---
 
 <Layout title="Klas Näsman / Fjällräven">
-    <nav class="menu">
-        <MenuContent />
-    </nav>
-    <section class="project">
-        <Transitions client:load>
-            <ProjectProps
-                title="FJÄLLRÄVEN"
-                info="Anna och Mathias gifte sig den 9 augusti 2018. Bröllopet ägde rum på vackra Muskö i Stockholms skärgård"
-            />
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <SwiperProps
-                        src="/assets/gudmar.1280.jpg"
-                        alt="Gudmar in Riksgränsen"
-                    />
-                    <SwiperProps
-                        src="/assets/gudmar2.1280.jpg"
-                        alt="Gudmar in Riksgränsen"
-                    />
-                    <SwiperProps
-                        src="/assets/gudmar.1280.jpg"
-                        alt="Gudmar in Riksgränsen"
-                    />
+  <nav class="menu">
+    <MenuContent />
+  </nav>
+  <section class="project">
+    <Transitions client:load>
+      <ProjectProps
+        title="FJÄLLRÄVEN"
+        info="Anna och Mathias gifte sig den 9 augusti 2018. Bröllopet ägde rum på vackra Muskö i Stockholms skärgård"
+      />
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {
+            photos.map(({ default: photo }) => (
+              <div class="slider-item swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img class="slider-image" src={photo} alt="" />
                 </div>
-            </div>
-        </Transitions>
-    </section>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </Transitions>
+  </section>
 </Layout>
