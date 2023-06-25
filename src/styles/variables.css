@@ -1,4 +1,4 @@
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 8px;
 }
 
@@ -10,7 +10,7 @@
 ::-webkit-scrollbar-track {
     background: transparent;
 }
-
+*/
 :root {
     /* @link https://utopia.fyi/type/calculator?c=320,16,1.25,1240,20,1.25,4,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
     /* Step 0: 12.80px → 16.00px */
