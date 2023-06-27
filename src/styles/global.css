@@ -234,7 +234,7 @@ p {
     top: -3px;
     position: sticky;
     height: 0px;
-    width: 96%;
+    width: 94%;
     z-index: 3;
     box-shadow: 0 0 5px 6px var(--clr-bg);
 }
@@ -244,7 +244,7 @@ p {
     bottom: -14px;
     position: sticky;
     height: 0px;
-    width: 96%;
+    width: 94%;
     z-index: 3;
     box-shadow: 0 0 5px 8px var(--clr-bg);
 }
